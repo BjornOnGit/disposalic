@@ -1,0 +1,57 @@
+.signin {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    margin: 40px 0px 40px 0px;
+
+    .item {
+      height: 43px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid black;
+      margin-bottom: 15px;
+
+      .MuiSvgIcon-root {
+        border-right: 1px solid black;
+        font-size: 28px;
+        padding-right: 5px;
+      }
+
+      input {
+        margin-left: 20px;
+        border: 0px;
+        outline-width: 0px;
+      }
+    }
+  }
+
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    Button {
+      background: #2e9e39 !important;
+      color: white;
+    }
+  }
+
+  .already {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      font-size: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
