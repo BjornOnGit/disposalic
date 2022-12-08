@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import { Button } from "@mui/material";
@@ -6,6 +7,7 @@ import { Button } from "@mui/material";
 const SignIn = () => {
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="signin">
@@ -35,12 +37,14 @@ const SignIn = () => {
         </form>
 
         <div className="register">
-          <Button fullWidth>Log in</Button>
+          <Button fullWidth onClick={() => navigate("/home")}>
+            Log in
+          </Button>
         </div>
 
         <div className="already">
           <div>
-            <b>Don't have an account? </b> <a href="#"> Click here</a>{" "}
+            <b>Don't have an account? </b> <Link to="/"> Sign up in</Link>{" "}
           </div>
         </div>
       </div>

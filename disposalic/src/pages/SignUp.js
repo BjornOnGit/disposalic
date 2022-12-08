@@ -5,6 +5,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import HomeOutlined from "@mui/icons-material/HomeOutlined";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { Button } from "@mui/material";
+import { useNavigate, Link } from "react-router-dom";
 
 const Signup = () => {
   const [fullName, setFullName] = useState("");
@@ -12,6 +13,7 @@ const Signup = () => {
   const [residence, setResidence] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="signup">
@@ -77,12 +79,14 @@ const Signup = () => {
         </form>
 
         <div className="register">
-          <Button fullWidth>Register</Button>
+          <Button fullWidth onClick={() => navigate("/home")}>
+            Register
+          </Button>
         </div>
 
         <div className="already">
           <div>
-            <b>Already have an account? </b> <a href="#"> Log in</a>{" "}
+            <b>Already have an account? </b> <Link to="/signin"> Log in</Link>{" "}
           </div>
         </div>
       </div>
