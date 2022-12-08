@@ -1,0 +1,96 @@
+.home {
+  height: 100vh;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+
+    .MuiSvgIcon-root {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .overview {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3fa749;
+    border-radius: 10px;
+    height: 132px;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+
+    .text {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-right: 15px;
+        font-size: 18px;
+      }
+
+      .MuiSvgIcon-root {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .table {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    th {
+      border-bottom: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 20%;
+    }
+
+    tr {
+      height: 35px;
+      text-align: center;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 40px 10px 40px;
+    border-top: 1px solid black;
+    width: 98vw;
+    margin-left: auto;
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 14px;
+
+        &:hover {
+          color: rgb(160, 158, 158);
+        }
+      }
+    }
+  }
+}
